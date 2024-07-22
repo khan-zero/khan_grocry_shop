@@ -81,7 +81,7 @@
     <!--==============================
      Preloader
   ==============================-->
-    <div class="preloader  ">
+    <div class="preloader">
         <button class="vs-btn preloaderCls">Cancel Preloader </button>
         <div class="preloader-inner">
             <div class="loader-logo">
@@ -320,7 +320,7 @@
                 <div class="row align-items-center justify-content-between">
                     <div class="col col-lg-auto">
                         <div class="header-logo">
-                            <a href="index"><img src="{% static 'assets/img/logo.svg' %}" alt="Foodano"></a>
+                            <a href="{% url 'index' %}"><img src="{% static 'assets/img/logo.svg' %}" alt="Foodano"></a>
                         </div>
                     </div>
                     <div class="col-auto">
@@ -349,6 +349,7 @@
                                         <li><a href="{% url 'checkout' %}">Check Out</a></li>
                                         <li><a href="{% url 'wishlist' %}">Wishlist</a></li>
                                         <li><a href="{% url 'login-register' %}">Login & Register</a></li>
+                                        <li><a href="{% url 'logout' %}">Log out</a></li>
                                     </ul>
                                 </li>
                                 <li class="menu-item-has-children">

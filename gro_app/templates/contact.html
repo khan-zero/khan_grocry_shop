@@ -67,7 +67,7 @@
                         <img src="{% static 'assets/img/icons/sec-icon-1.png' %}" alt="Section Image">
                         <p class="fs-md mt-4 pt-1">Donec sed laoreet odio. Quisque sollicitudin vestibulum ultrices. Nulla pellentesque odio eget urna venenatis, ac maximus diam auctor. Phasellus aliquam neque non sodales lacinia.</p>
                     </div>
-                    <form action="{% url 'contact_form' %}" method="POST" class="contact-form contact-form1 mb-30">
+                    <form action="{% url 'index' %}" method="POST" class="contact-form contact-form1 mb-30">
                         {% csrf_token %}
                         <div class="row g-4">
                             <div class="col-12 form-group mb-0">
